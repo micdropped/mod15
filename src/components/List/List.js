@@ -3,9 +3,7 @@ import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
 import Column from '../Column/Column.js';
 import { settings } from '../../data/dataStore';
-import Button from '../Button/Button';
 import Creator from '../Creator/Creator';
-import Card from '../Card/Card';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 
@@ -44,6 +42,7 @@ class List extends React.Component {
     }
 
     render() {
+        console.log("list", this.state.columns.key);
         return (
             <section className={styles.component}>
                 <Hero title={this.props.title}

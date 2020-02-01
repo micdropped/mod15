@@ -7,4 +7,22 @@
   padding: $base-size;
   margin: 0 0 $base-size 0;
   border-radius: $radius;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.btn {
+  color: $color-dark;
+  background: $color-light;
+  border: 2px solid $color-dark;
+  outline: none;
+  border-radius: $radius;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-light;
+    background: $color-dark;
+  }
 }
