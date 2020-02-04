@@ -33,9 +33,26 @@ class Column extends React.Component {
         ));
     }
 
+
+    removeCard(id) {
+        //console.log('remove card', id)
+        console.log(this.state)
+        this.setState({
+            cards: this.state.cards.filter(card => card.key !== id)
+        })
+    }
+
+    editCard(title) {
+        this.setState({
+            cards: this.state.cards.map()
+
+        })
+    }
+
+
     render() {
         console.log("state col", this.state)
-
+        console.log("props col", this.props)
         return (
             <section className={styles.component}>
                 <h3 className={styles.title}>{this.props.title}
@@ -45,8 +62,8 @@ class Column extends React.Component {
                     </span>
                 </h3>
                 <div>
-                    {this.state.cards.map((card, key) => {
-                        return <Card title={card.title} key={key} />
+                    {this.state.cards.map((card) => {
+                        return <Card title={card.title} key={card.key} id={card.key} removeCard={this.removeCard.bind(this)} />
                     })}
                 </div>
                 <div>

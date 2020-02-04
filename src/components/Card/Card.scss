@@ -12,7 +12,19 @@
 
 }
 
+.btnGroup {
+  display: flex;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+
+}
+
 .btn {
+  margin: 0 $base-size/6;
   color: $color-dark;
   background: $color-light;
   border: 2px solid $color-dark;
@@ -25,4 +37,10 @@
     color: $color-light;
     background: $color-dark;
   }
+
+  &:focus {
+    color: $color-light;
+    background: $color-dark;
+  }
+
 }
