@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import React from 'react';
 import styles from './Column.scss';
 import Icon from '../Icon/Icon';
@@ -16,6 +17,8 @@ class Column extends React.Component {
         title: PropTypes.node.isRequired,
         column: PropTypes.node,
         name: PropTypes.node,
+        cards: PropTypes.node,
+        icon: PropTypes.string,
         //children: PropTypes.node.isRequired,
     }
 
@@ -27,8 +30,8 @@ class Column extends React.Component {
                     {
                         key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
                         title: title,
-                    }
-                ]
+                    },
+                ],
             }
         ));
     }
@@ -36,23 +39,23 @@ class Column extends React.Component {
 
     removeCard(id) {
         //console.log('remove card', id)
-        console.log(this.state)
+        console.log(this.state);
         this.setState({
-            cards: this.state.cards.filter(card => card.key !== id)
-        })
+            cards: this.state.cards.filter(card => card.key !== id),
+        });
     }
 
-    editCard(title) {
-        this.setState({
-            cards: this.state.cards.map()
+    // editCard(title) {
+    //     this.setState({
+    //         cards: this.state.cards.map()
 
-        })
-    }
+    //     })
+    // }
 
 
     render() {
-        console.log("state col", this.state)
-        console.log("props col", this.props)
+        console.log('state col', this.state),
+            console.log('props col', this.props);
         return (
             <section className={styles.component}>
                 <h3 className={styles.title}>{this.props.title}
@@ -63,7 +66,7 @@ class Column extends React.Component {
                 </h3>
                 <div>
                     {this.state.cards.map((card) => {
-                        return <Card title={card.title} key={card.key} id={card.key} removeCard={this.removeCard.bind(this)} />
+                        return <Card title={card.title} key={card.key} id={card.key} removeCard={this.removeCard.bind(this)} />;
                     })}
                 </div>
                 <div>
@@ -72,7 +75,7 @@ class Column extends React.Component {
                         action={title => this.addCard(title)} />
                 </div>
             </section>
-        )
+        );
     }
 }
 

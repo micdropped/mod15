@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import React from 'react';
 import styles from './Hero.scss';
 import ReactHtmlParser from 'react-html-parser';

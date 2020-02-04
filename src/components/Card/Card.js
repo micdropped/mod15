@@ -1,6 +1,6 @@
+/* eslint-disable indent */
 import React from 'react';
 import styles from './Card.scss';
-import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 
 
@@ -11,23 +11,23 @@ class Card extends React.Component {
 
     static propTypes = {
         title: PropTypes.node.isRequired,
-        id: PropTypes.node.isRequired
+        id: PropTypes.node.isRequired,
+        removeCard: PropTypes.func,
     }
 
-    enableEdit() {
-        this.setState(state => (
-            {
-                readOnly: false,
-                btnEdit: 'OK'
-            }
-        ))
-    }
+    // enableEdit() {
+    //     this.setState(state => (
+    //         {
+    //             readOnly: false,
+    //         }
+    //     ));
+    // }
 
-    handleChange() { }
+    // handleChange() { }
 
     render() {
-        console.log("state col", this.state)
-        console.log("props col", this.props)
+        console.log('state col', this.state),
+            console.log('props col', this.props);
         return (
             < section className={styles.component} >
                 <input type="text"
@@ -40,7 +40,7 @@ class Card extends React.Component {
                     <button className={styles.btn} onClick={() => this.props.removeCard(this.props.id)}>X</button>
                 </div>
             </section>
-        )
+        );
     }
 
 }
