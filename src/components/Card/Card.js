@@ -33,7 +33,7 @@ class Card extends React.Component {
                 <input type="text"
                     readOnly={this.state.readOnly}
                     placeholder={this.props.title}
-                    onChange={this.handleChange()} />
+                />
                 <div className={styles.btnGroup}>
                     <button className={styles.btn} onClick={() => this.enableEdit()}>OK</button>
                     <button className={styles.btn} onClick={() => this.enableEdit()}>Edit</button>
