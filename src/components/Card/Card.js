@@ -11,7 +11,7 @@ class Card extends React.Component {
 
     static propTypes = {
         title: PropTypes.node.isRequired,
-        id: PropTypes.node.isRequired,
+        id: PropTypes.node,
         removeCard: PropTypes.func,
     }
 
@@ -26,13 +26,13 @@ class Card extends React.Component {
     // handleChange() { }
 
     render() {
-        console.log('state col', this.state),
-            console.log('props col', this.props);
+        const { title } = this.props;
+
         return (
             < section className={styles.component} >
                 <input type="text"
                     readOnly={this.state.readOnly}
-                    placeholder={this.props.title}
+                    placeholder={title}
                 />
                 <div className={styles.btnGroup}>
                     <button className={styles.btn} onClick={() => this.enableEdit()}>OK</button>
