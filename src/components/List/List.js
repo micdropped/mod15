@@ -5,6 +5,7 @@ import Hero from '../Hero/Hero.js';
 import Column from '../Column/ColumnContainer';
 import { settings } from '../../data/dataStore';
 import Creator from '../Creator/Creator';
+import Container from '../Container/Container';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 
@@ -29,6 +30,7 @@ class List extends React.Component {
 
         return (
             <section className={styles.component}>
+                <Container />
                 <Hero titleText={title} image={image} />
                 <div className={styles.description}>
                     {ReactHtmlParser(description)}
