@@ -73,6 +73,18 @@ export const listData = {
   ],
 };
 
+export const info = {
+  title: 'Good to know',
+  image: 'https://cdn.mos.cms.futurecdn.net/XWRZCcWsDjdG29nQYJuDpb.png',
+  textContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+};
+
+export const faq = {
+  title: 'frequently asked questions',
+  image: 'https://newonce.net/wp-content/uploads/2018/06/rick-and-morty-kopia.jpg',
+  textContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+};
+
 const lists = [
   {
     id: 'list-1',
