@@ -92,6 +92,24 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Books I want to read',
+    description: 'Books of 2020',
+    image: 'https://bit.ly/2uZb5eg',
+  },
+  {
+    id: 'list-3',
+    title: 'Movies I want to watch',
+    description: 'Movies for latenight',
+    image: 'https://images.pexels.com/photos/2398356/pexels-photo-2398356.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
+  },
+  {
+    id: 'list-4',
+    title: 'Games I wont have time to play',
+    description: 'Games if i ever have time for...',
+    image: 'https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+  },
 ];
 
 const columns = [
@@ -103,19 +121,19 @@ const columns = [
   },
   {
     id: 'column-2',
-    listId: 'list-1',
+    listId: 'list-2',
     title: 'Movies',
     icon: 'film',
   },
   {
     id: 'column-3',
-    listId: 'list-1',
+    listId: 'list-3',
     title: 'Games',
     icon: 'gamepad',
   },
   {
     id: 'column-4',
-    listId: 'list-2',
+    listId: 'list-4',
     title: 'Strange column',
     icon: 'question',
   },
@@ -129,27 +147,27 @@ const cards = [
   },
   {
     id: 'card-2',
-    columnId: 'column-1',
+    columnId: 'column-2',
     title: 'Interpreter of Maladies',
   },
   {
     id: 'card-3',
-    columnId: 'column-2',
+    columnId: 'column-3',
     title: 'Harry Potter',
   },
   {
     id: 'card-4',
-    columnId: 'column-2',
+    columnId: 'column-4',
     title: 'Star Wars',
   },
   {
     id: 'card-5',
-    columnId: 'column-3',
+    columnId: 'column-1',
     title: 'The Witcher',
   },
   {
     id: 'card-6',
-    columnId: 'column-3',
+    columnId: 'column-2',
     title: 'Skyrim',
   },
 ];
